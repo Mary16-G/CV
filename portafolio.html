@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi sitio CV</title>
+    <link rel="stylesheet" href="css/css-gg.css">
+    <link rel="shortcut icon" href="resources/logo.svg" type="image/svg">
+    <link rel="stylesheet" href="css/site.css">
+    <link rel="stylesheet" href="css/mobile.css">
+    <script src="js/site.js"></script>
+</head>
+
+<body>
+    <div class="main-content">
+        <aside>
+            <div class="profile">
+                <img src="image.jpeg" id="photo-profile" class="my-photo">
+                <div>
+                    <h1 class="title">Maricruz Portada Gonzalez</h1>
+                    <div class="badge-profile">Programador</div>
+                    <div class="social">
+                        <a href="facebook.com" target="_blank"><i class="gg-facebook"></i></a>
+                        <a href="x.com" target="_blank"><i class="gg-twitter"></i></a>
+                        <a href="youtube.com" target="_blank"><i class="gg-youtube"></i></a>
+                        <a href="pokemon.com" target="_blank"><i class="gg-pokemon"></i></a>
+                    </div>
+                </div>
+                <div class="info">
+                    <ul class="contacts-block">
+                        <li class="contacts-block-item"><i class="gg-calendar"></i>&nbsp;&nbsp;12 de Enero 2025</li>
+                        <li class="contacts-block-item"><i class="gg-pin"></i>&nbsp;&nbsp;Puebla, Puebla</li>
+                        <li class="contacts-block-item"><i class="gg-mail"></i>&nbsp;&nbsp;<a href="mailto:mary.gonzalez02@gmail.com">mary.gonzalez02@gmail.com</a></li>
+                        <li class="contacts-block-item"><i class="gg-phone"></i>&nbsp;&nbsp;+1 22 24 41 17 36</li>
+                        <li class="contacts-block-item"><i class="gg-skype"></i>&nbsp;&nbsp;<a href="skype:jenny_2318">Skype: mary_2351</a></li>
+                    </ul>
+                    <a class="btn" href="media/CV_Maricruz Portada González.pdf">Descargar CV</a>
+                </div>
+            </div>
+        </aside>
+
+        <section class="resume">
+            <h2 class="title bordered">Portfolio</h2>
+            <div class="portfolio">
+                <img src="resources/Tec.jpeg" onclick="showImage(this)">
+                <img src="resources/Tec.jpeg" onclick="showImage(this)">
+                <img src="resources/Tec.jpeg" onclick="showImage(this)">
+                <img src="resources/Tec.jpeg" onclick="showImage(this)">
+                <img src="resources/Tec.jpeg" onclick="showImage(this)">
+                <img src="resources/Tec.jpeg" onclick="showImage(this)">
+                <img src="resources/Tec.jpeg" onclick="showImage(this)">
+                <img src="resources/Tec.jpeg" onclick="showImage(this)">
+                <img src="resources/Tec.jpeg" onclick="showImage(this)">
+            </div>
+
+            <!-- Modal para mostrar la imagen en tamaño grande -->
+            <div class="modal" id="preview" onclick="cerrarModal()">
+                <div class="modal-content">
+                    <img id="modal-image" src="" alt="Imagen ampliada">
+                    <button class="close-btn" onclick="cerrarModal()">Cerrar</button>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer>Autor: Maricruz Portada Gonzalez</footer>
+    <a class="btn" onclick="SayWelcome()"><i class="font-icon icon-dowload"></i>Hola</a>
+
+    <script>
+        function showImage(image) {
+            const modal = document.getElementById("preview");
+            const modalImage = document.getElementById("modal-image");
+            modal.style.display = "flex";
+            modalImage.src = image.src;
+        }
+
+        function cerrarModal() {
+            const modal = document.getElementById("preview");
+            modal.style.display = "none";
+        }
+    </script>
+</body>
+</html>
