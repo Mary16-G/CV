@@ -195,6 +195,30 @@ body {
     max-width: 500px;
 }
 
+.modal-content {
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(190, 10, 10, 0.2);
+    display: inline-block;
+    text-align: center;
+}
+
+.close-btn {
+    background-color: red; /* Color de fondo del botón */
+    color: white; /* Color del texto */
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.close-btn:hover {
+    background-color: darkred; /* Cambio de color al pasar el mouse */
+}
+
 .showModal{
     display: block;
     transition: 0.5s e;
